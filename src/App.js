@@ -22,7 +22,7 @@ function App() {
         </label>
 
         <label>
-          Favorite Season:
+          Favorite season:
           <select required>
             <option>Spring </option>
             <option>Summer </option>
@@ -31,9 +31,24 @@ function App() {
           </select>
         </label>
 
-        <label>
+        <fieldset>
+          <legend>Can you drive a car?</legend>
+          <label>
+            Yes
+            <input required type="radio" name = "drives?" value = "yes">
+            </input>
+          </label>
+
+          <label className="noSelect">
+            No
+            <input required type="radio" name = "drives?" value = "no">
+            </input>
+          </label>
+        </fieldset>
+
+        <input type = "submit">
           
-        </label>
+        </input>
 
       </header>
     </div>

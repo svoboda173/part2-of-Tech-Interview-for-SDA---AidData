@@ -44,3 +44,7 @@ input {
 select {
   margin-left: 10px;
 }
+
+.noSelect {
+  margin-left: 20px
+}
