@@ -1,25 +1,64 @@
 import logo from './logo.svg';
 import './App.css';
 
+//TODO: add aiddata logo?
+
 function App() {
   return (
-    <div className="App">
+    <div className = "App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h4>  Please enter the following information about yourself:</h4>
+
+        <label>
+          Name:
+          <input type="text" required maxLength={150}>
+          </input>
+        </label>
+        
+        <label>
+          Age:
+          <input type="number" required max={125}>
+          </input>
+        </label>
+
+        <label>
+          Favorite Season:
+          <select required>
+            <option>Spring </option>
+            <option>Summer </option>
+            <option>Fall </option>
+            <option>Winter </option>
+          </select>
+        </label>
+
+        <label>
+          
+        </label>
+
       </header>
     </div>
   );
 }
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <p>
+//           Edit <code>src/App.js</code> and save to reload.
+//         </p>
+//         <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Learn React
+//         </a>
+//       </header>
+//     </div>
+//   );
+// }
 
 export default App;
