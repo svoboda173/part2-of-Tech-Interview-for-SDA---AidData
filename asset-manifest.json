@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/part2-of-Tech-Interview-for-SDA---AidData/static/css/main.eb6396a2.css",
+    "main.js": "/part2-of-Tech-Interview-for-SDA---AidData/static/js/main.d73a3d17.js",
+    "static/js/787.624a9df9.chunk.js": "/part2-of-Tech-Interview-for-SDA---AidData/static/js/787.624a9df9.chunk.js",
+    "static/media/aiddata.png": "/part2-of-Tech-Interview-for-SDA---AidData/static/media/aiddata.b0167fc96c540ea6bef6.png",
+    "index.html": "/part2-of-Tech-Interview-for-SDA---AidData/index.html",
+    "main.eb6396a2.css.map": "/part2-of-Tech-Interview-for-SDA---AidData/static/css/main.eb6396a2.css.map",
+    "main.d73a3d17.js.map": "/part2-of-Tech-Interview-for-SDA---AidData/static/js/main.d73a3d17.js.map",
+    "787.624a9df9.chunk.js.map": "/part2-of-Tech-Interview-for-SDA---AidData/static/js/787.624a9df9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb6396a2.css",
+    "static/js/main.d73a3d17.js"
+  ]
+}
