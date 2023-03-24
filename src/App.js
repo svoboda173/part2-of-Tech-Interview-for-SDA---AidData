@@ -11,20 +11,21 @@ function UserInfo({ userName, userAge, userFavoriteSeason, userDrives }) {
         Name: {userName} <br />
         Age: {userAge} <br />
         Favorite Season: {userFavoriteSeason} <br />
-        {userDrives ? "The user drives" : "The user does not drive"} <br />
+        {userDrives ? "The user drives." : "The user does not drive."} <br />
       </p>
     </div>
   );
 }
 
 export default function App() {
-  // create state variables for the info we need to save to display eventually
+  //create state variables for the info we need to save to display eventually
   const [name, setName] = useState("");
   const [age, setAge] = useState(0);
   const [favSeason, setFavSeason] = useState("Spring");
   const [drives, setDrives] = useState(false);
   const [hasSubmitted, setHasSubmitted] = useState(false);
 
+  //when submit button clicked, don't reload page and record that user has clicked button
   function handleSubmit(e) {
     e.preventDefault();
     setHasSubmitted(true);
@@ -59,7 +60,13 @@ export default function App() {
               value={age}
               required
               max={125}
-              onChange={(e) => setAge(e.target.value)}
+              //Below if statemnet included because despite the inclusion of max, user could still
+              //manually input numbers higher than 125 by typing them in
+              onChange={(e) => {
+                if (e.target.valueAsNumber <= 125) {
+                  setAge(e.target.valueAsNumber);
+                }
+              }}
             />
           </label>
           <br />
@@ -110,7 +117,15 @@ export default function App() {
           <input type="submit" value="Submit" onClick={handleSubmit} />
 
           <div>
-            {hasSubmitted && <UserInfo userName={name} userAge={age} userFavoriteSeason={favSeason} userDrives={drives}/>}
+          {/* Only dislpay UserInfo if user has clicked submit  */}
+            {hasSubmitted && (
+              <UserInfo
+                userName={name}
+                userAge={age}
+                userFavoriteSeason={favSeason}
+                userDrives={drives}
+              />
+            )}
           </div>
         </form>
       </header>
